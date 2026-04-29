@@ -266,4 +266,56 @@ footer {
     .resume-frame embed {
         height: 650px;
     }
+/* Better mobile layout */
+@media (max-width: 768px) {
+    header {
+        padding: 28px 0 18px;
+    }
+
+    .site-title {
+        font-size: 2.3rem;
+        line-height: 1.1;
+    }
+
+    .site-subtitle {
+        font-size: 1.05rem;
+        line-height: 1.4;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 10px;
+        font-size: 0.95rem;
+        border-radius: 12px;
+    }
+
+    .hero {
+        padding: 24px;
+        margin-top: 22px;
+    }
+
+    .hero img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .hero-text h1 {
+        font-size: 2.1rem;
+        line-height: 1.15;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
 }
