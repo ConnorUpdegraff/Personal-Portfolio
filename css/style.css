@@ -324,5 +324,28 @@ header::after {
     content: none !important;
     display: none !important;
 }
+.hero-label {
+    color: #60a5fa;
+    font-weight: 700;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.skill-card {
+    background: #f8fafc;
+    color: #0f172a;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-weight: 700;
+    text-align: center;
+}
 }
 
