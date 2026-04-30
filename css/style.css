@@ -317,5 +317,12 @@ footer {
     .hero-text p {
         font-size: 1rem;
     }
+    nav::before,
+nav::after,
+header::before,
+header::after {
+    content: none !important;
+    display: none !important;
 }
 }
+
