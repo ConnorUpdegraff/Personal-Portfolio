@@ -99,6 +99,13 @@ main {
     min-width: 280px;
 }
 
+.hero-label {
+    color: #60a5fa;
+    font-weight: 700;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+}
+
 .hero-text h1 {
     font-size: 2.6rem;
     line-height: 1.15;
@@ -232,41 +239,14 @@ footer {
     margin-top: 26px;
 }
 
-@media (max-width: 768px) {
-    .site-title {
-        font-size: 2.2rem;
-    }
+nav::before,
+nav::after,
+header::before,
+header::after {
+    content: none !important;
+    display: none !important;
+}
 
-    .site-subtitle {
-        font-size: 1rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li a {
-        width: 100%;
-        text-align: center;
-    }
-
-    .hero {
-        padding: 28px;
-    }
-
-    .hero img {
-        width: 135px;
-        height: 135px;
-    }
-
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .resume-frame embed {
-        height: 650px;
-    }
-/* Better mobile layout */
 @media (max-width: 768px) {
     header {
         padding: 28px 0 18px;
@@ -317,35 +297,14 @@ footer {
     .hero-text p {
         font-size: 1rem;
     }
-    nav::before,
-nav::after,
-header::before,
-header::after {
-    content: none !important;
-    display: none !important;
-}
-.hero-label {
-    color: #60a5fa;
-    font-weight: 700;
-    margin-bottom: 14px;
-    letter-spacing: 0.3px;
-}
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 14px;
-    margin-top: 18px;
-}
+    .card,
+    .project-card,
+    .resume-frame {
+        padding: 22px;
+    }
 
-.skill-card {
-    background: #f8fafc;
-    color: #0f172a;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 14px 16px;
-    font-weight: 700;
-    text-align: center;
+    .resume-frame embed {
+        height: 650px;
+    }
 }
-}
-
